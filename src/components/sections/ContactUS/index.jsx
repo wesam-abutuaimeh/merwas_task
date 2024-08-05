@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import SectionIntro from "@/components/organisms/SectionIntro";
-import { Container } from "@/styles/commen";
+import { Container } from "@/styles/commen.js";
 import {
   StyledContactUs,
   StyledContactDetails,
@@ -152,7 +153,6 @@ const ContactUs = () => {
         </StyledContactDetails>
 
         <iframe
-          style={{ width: "600px", height: "450px", border: 0 }}
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
