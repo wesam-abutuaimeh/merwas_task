@@ -36,7 +36,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        {/* <body className={nobile.className}>{children}</body> */}
       </body>
     </html>
   );
