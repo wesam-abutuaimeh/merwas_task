@@ -26,7 +26,7 @@ function Services() {
       <Mentoring />
 
       <ServiceSection
-        reverse
+        reverse={true}
         head={"mentoring and training"}
         pargraph={
           "Grow with Expert Guidance. Our mentoring and training programs are your gateway to professional development. Gain insights and guidance from industry experts. Learn how to effectively apply your knowledge, navigate challenges, and expand your technological project"
