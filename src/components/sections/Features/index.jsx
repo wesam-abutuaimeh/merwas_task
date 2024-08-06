@@ -4,6 +4,7 @@ import SectionIntro from "@/components/organisms/SectionIntro";
 import { Container } from "@/styles/commen";
 import { StyledFeaturesDiv } from "./style";
 import { CARDS } from "@/mock/cards";
+import PromoCard from "./PromoCard";
 
 const Features = () => {
   return (
@@ -11,16 +12,17 @@ const Features = () => {
       <Container className="container">
         <SectionIntro
           description="At The OurWebsite, we are dedicated to helping you excel in the world of technology. Our services are specifically designed to meet your needs"
-          fontFamily="nobile"
+          fontFamily="Nobile , sans-serif"
           fontSize="24px"
           fontWeight="500"
           lineHeight="76px"
-          pColor="#77838F"
+          pColor="#3F485E;"
+          maxWidth={"950px"}
         />
 
         <div className="cards__container">
           {CARDS.map((card) => (
-            <StyledFeaturesDiv key={card.id} bgimage={card.img_src}>
+            <StyledFeaturesDiv key={card.id} bgImage={card.img_src}>
               <div className="card">
                 <div>
                   <h2>{card.title}</h2>
@@ -55,6 +57,8 @@ const Features = () => {
             </StyledFeaturesDiv>
           ))}
         </div>
+
+        <PromoCard />
       </Container>
     </StyledFeaturesDiv>
   );

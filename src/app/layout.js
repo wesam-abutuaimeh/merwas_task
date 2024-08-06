@@ -1,4 +1,5 @@
 import { Nobile, Montserrat, DM_Sans, Alef } from "next/font/google";
+import StyledComponentsRegistry from "@/lib/registry";
 import "./globals.css";
 
 export const nobile = Nobile({
@@ -33,7 +34,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nobile.className}>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        {/* <body className={nobile.className}>{children}</body> */}
+      </body>
     </html>
   );
 }

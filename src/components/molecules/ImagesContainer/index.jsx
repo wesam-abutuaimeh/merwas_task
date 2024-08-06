@@ -2,29 +2,29 @@ import React from "react";
 import CustomImage from "@/components/atoms/CustomImage";
 import { StyledImage } from "./style";
 
-const ImageContainer = () => {
+const ImagesContainer = () => {
   return (
     <StyledImage>
       <CustomImage
         imgSrc={"/images/services/services3.png"}
-        width={250}
-        height={300}
+        width={200}
+        height={250}
         title={"services"}
       />
       <CustomImage
         imgSrc={"/images/services/services1.png"}
-        width={250}
-        height={300}
+        width={200}
+        height={250}
         title={"services"}
       />
       <CustomImage
         imgSrc={"/images/services/services2.png"}
-        width={250}
-        height={300}
+        width={200}
+        height={250}
         title={"services"}
       />
     </StyledImage>
   );
 };
 
-export default ImageContainer;
+export default ImagesContainer;

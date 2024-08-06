@@ -27,7 +27,7 @@ function AboutUs() {
 
             <div className="cards__container">
               {aboutUSData.map((item) => (
-                <div className="card" key={item.id} bgimage={item.img_src}>
+                <div className="card" key={item.id} bgImage={item.img_src}>
                   <div>
                     <CustomImage
                       imgSrc={item.SVG}

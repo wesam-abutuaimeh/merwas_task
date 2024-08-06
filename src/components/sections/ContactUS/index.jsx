@@ -12,6 +12,7 @@ import CustomImage from "@/components/atoms/CustomImage";
 import SocailNetworkingIcons from "@/components/organisms/SocailNetworkingIcons";
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";
+import Map from "./GoogleMap";
 
 const ContactUs = () => {
   const handleSubmit = () => {};
@@ -152,12 +153,7 @@ const ContactUs = () => {
           </StyledColumn>
         </StyledContactDetails>
 
-        <iframe
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=AIzaSyCi03hdkAObwHa9YRXRCPip8wQxY_fdy-4"
-        ></iframe>
+        <Map />
       </Container>
     </StyledContactUs>
   );

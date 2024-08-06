@@ -4,6 +4,10 @@ export const StyledDiv = styled.div`
   display: flex;
   height: 53px;
   justify-content: end;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 export const StyledIcon = styled.a`
