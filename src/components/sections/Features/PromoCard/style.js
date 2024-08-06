@@ -21,6 +21,9 @@ const ImageWrapper = styled.div`
   width: 50%;
   border-radius: 10px;
   overflow: hidden;
+  img {
+    object-fit: contain;
+  }
 `;
 
 const TextContainer = styled.div`
