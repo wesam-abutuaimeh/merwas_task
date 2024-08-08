@@ -15,10 +15,8 @@ import Input from "@/components/atoms/Input";
 import Map from "./GoogleMap";
 
 const ContactUs = () => {
-  const handleSubmit = () => {};
-
-  const onSubmit = async (data) => {
-    await handleAUTHENTICATE(END_POINTS.LOGIN, data);
+  const handleSubmit = (event) => {
+    event.preventDefault();
   };
 
   return (
@@ -26,7 +24,7 @@ const ContactUs = () => {
       <Container>
         <SectionIntro
           sectionHeader="contact us"
-          description="With lots of unique blocks, you can easily build a page easily without any coding. "
+          description="With lots of unique blocks, you can easily build a page easily without any coding."
           maxWidth="520px"
           margin="15px auto 0"
           h1Color="#3F485E"
@@ -110,42 +108,56 @@ const ContactUs = () => {
 
           <StyledColumn>
             <h4 className="cta__form__Word">Have a question?</h4>
-            <StyledForm onSubmit={handleSubmit(onSubmit)}>
+            <StyledForm onSubmit={handleSubmit}>
               <div className="input__container">
-                <label id="complain">types</label>
+                <label htmlFor="complain">Types</label>
                 <Input
                   type="text"
                   placeholder="complain"
-                  id={"complain"}
+                  id="complain"
+                  name="complain"
                   required
                 />
               </div>
 
               <div className="inputs__container">
                 <div className="input__container">
-                  <label id="name">name</label>
-                  <Input type="text" placeholder="ali" required />
+                  <label htmlFor="name">Name</label>
+                  <Input
+                    type="text"
+                    placeholder="Ali"
+                    id="name"
+                    name="name"
+                    required
+                  />
                 </div>
                 <div className="input__container">
-                  <label id="email">Email</label>
-                  <Input type="email" required />
+                  <label htmlFor="email">Email</label>
+                  <Input type="email" id="email" name="email" required />
                 </div>
               </div>
               <div className="input__container">
                 <label htmlFor="msg">Message</label>
-                <textarea className="dd" id="msg" placeholder="Content" />
+                <textarea
+                  className="dd"
+                  id="msg"
+                  name="msg"
+                  placeholder="Content"
+                  required
+                />
               </div>
 
               <Button
-                class="login__btn"
+                className="login__btn"
                 bgColor="#3F485E"
                 color="#fff"
                 borderRadius="50px"
                 width={"320px"}
                 height={"60px"}
-                fontFamily={"Jost , sans-serif"}
+                fontFamily={"Jost, sans-serif"}
                 fontSize="16px"
                 fontWeight="500"
+                type="submit"
               >
                 SEND
               </Button>
@@ -158,4 +170,5 @@ const ContactUs = () => {
     </StyledContactUs>
   );
 };
+
 export default ContactUs;
