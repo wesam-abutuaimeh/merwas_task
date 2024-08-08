@@ -5,6 +5,7 @@ import Partners from "@/components/sections/Partners";
 import Footer from "@/components/organisms/Footer";
 import AboutUs from "@/components/sections/AboutUs";
 import Services from "../sections/Services";
+import ContactUs from "../sections/ContactUs";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
       <AboutUs />
       <Services />
       <Partners />
-
+      <ContactUs />
       <Footer />
     </main>
   );
